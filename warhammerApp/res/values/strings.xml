@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WarhammerApp</string>
+    <string name="weapon_name">Weapon:</string>
+    <string name="weapon_class">Class:</string>
+    <string name="weapon_range">Range:</string>
+    <string name="weapon_rof">ROF:</string>
+    <string name="weapon_damage">Damage:</string>
+    <string name="weapon_pen">Pen:</string>
+    <string name="weapon_clip">Clip:</string>
+    <string name="weapon_reload">Reload:</string>
+    <string name="weapon_special">Specials:</string>
+    <string name="saveButton">Save</string>
+	<string name="loadButton">Load</string>
+	<string name="rangedWeaponButton">Ranged Weapon</string>
+	<string name="characterButton">Character</string>
+	<string name="armorButton">Armor</string>
+	<string name="meleeWeaponButton">Melee Weapon</string>
+	<string name="characterName">Name:</string>
+	<string name="ws">WS:</string>
+	<string name="bs">BS:</string>
+	<string name="s">S:</string>
+	<string name="t">T:</string>
+	<string name="ag">Ag:</string>
+	<string name="per">Per:</string>
+	<string name="intl">Int:</string>
+	<string name="wp">WP:</string>
+	<string name="fel">Fel:</string>
+</resources>

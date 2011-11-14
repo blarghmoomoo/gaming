@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+    <TextView
+        android:id="@+id/weapon_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:text="@string/weapon_class"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toRightOf="@+id/name"
+        android:background="@android:color/darker_gray"
+        android:ems="15" />
+
+    <EditText
+        android:id="@+id/weapon_classEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weapon_class"
+        android:layout_alignBottom="@+id/weapon_class"
+        android:layout_toRightOf="@+id/name"
+        android:background="@android:color/darker_gray"
+        android:ems="15" />
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weapon_class"
+        android:layout_below="@+id/weapon_class"
+        android:text="@string/weapon_range"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rangeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/range"
+        android:layout_alignLeft="@+id/weapon_classEdit"
+        android:background="@android:color/darker_gray"
+        android:ems="3" />
+
+    <TextView
+        android:id="@+id/rof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rangeEdit"
+        android:layout_toRightOf="@+id/rangeEdit"
+        android:text="@string/weapon_rof"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rofEdit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rof"
+        android:layout_alignBottom="@+id/rof"
+        android:layout_toRightOf="@+id/rof"
+        android:background="@android:color/darker_gray"
+        android:ems="1"
+         />
+
+    <TextView
+        android:id="@+id/rof1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rofEdit1"
+        android:layout_toRightOf="@+id/rofEdit1"
+        android:text="/"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rofEdit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rof1"
+        android:layout_toRightOf="@+id/rof1"
+        android:background="@android:color/darker_gray"
+        android:ems="2"
+         />
+
+    <TextView
+        android:id="@+id/rof2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rofEdit2"
+        android:layout_toRightOf="@+id/rofEdit2"
+        android:text="/"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rofEdit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rof2"
+        android:layout_toRightOf="@+id/rof2"
+        android:background="@android:color/darker_gray"
+        android:ems="2"
+         />
+    
+
+</LinearLayout>

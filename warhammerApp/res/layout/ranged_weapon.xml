@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/weapon_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/classText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_below="@+id/nameText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/weapon_class"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/rangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classText"
+        android:layout_below="@+id/classText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/weapon_range"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/damageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rangeText"
+        android:layout_below="@+id/rangeText"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/weapon_damage"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/clipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/damageText"
+        android:layout_below="@+id/damageText"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/weapon_clip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/specialText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clipText"
+        android:layout_below="@+id/clipText"
+        android:paddingLeft="10dp"
+        android:text="@string/weapon_special"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameText"
+        android:layout_alignBottom="@+id/nameText"
+        android:layout_toRightOf="@+id/damageText"
+        android:background="@android:color/darker_gray"
+        android:ems="15" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/classEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classText"
+        android:layout_alignBottom="@+id/classText"
+        android:layout_alignRight="@+id/nameEdit"
+        android:background="@android:color/darker_gray"
+        android:ems="15" />
+
+    <EditText
+        android:id="@+id/rangeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rangeText"
+        android:layout_alignBottom="@+id/rangeText"
+        android:layout_alignLeft="@+id/classEdit"
+        android:background="@android:color/darker_gray"
+        android:ems="3" />
+
+    <EditText
+        android:id="@+id/rofEdit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rangeEdit"
+        android:layout_alignBottom="@+id/rangeEdit"
+        android:layout_alignRight="@+id/classEdit"
+        android:background="@android:color/darker_gray"
+        android:ems="2"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dividerText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rofEdit3"
+        android:layout_alignBottom="@+id/rofEdit3"
+        android:layout_toLeftOf="@+id/rofEdit3"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="/"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rofEdit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dividerText2"
+        android:layout_alignBottom="@+id/dividerText2"
+        android:layout_toLeftOf="@+id/dividerText2"
+        android:background="@android:color/darker_gray"
+        android:ems="2"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/dividerText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rofEdit2"
+        android:layout_alignBottom="@+id/rofEdit2"
+        android:layout_toLeftOf="@+id/rofEdit2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="/"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rofEdit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dividerText1"
+        android:layout_alignBottom="@+id/dividerText1"
+        android:layout_toLeftOf="@+id/dividerText1"
+        android:background="@android:color/darker_gray"
+        android:ems="2" />
+
+    <TextView
+        android:id="@+id/rofText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rofEdit1"
+        android:layout_alignBottom="@+id/rangeEdit"
+        android:layout_toLeftOf="@+id/rofEdit1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/weapon_rof"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/damageText"
+        android:layout_alignBottom="@+id/damageText"
+        android:layout_alignLeft="@+id/nameEdit"
+        android:background="@android:color/darker_gray"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/penetrationEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditText01"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_alignRight="@+id/rofEdit3"
+        android:background="@android:color/darker_gray"
+        android:ems="2"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/penetrationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/penetrationEdit"
+        android:layout_alignBottom="@+id/penetrationEdit"
+        android:layout_toLeftOf="@+id/penetrationEdit"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/weapon_pen"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/clipEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clipText"
+        android:layout_alignBottom="@+id/clipText"
+        android:layout_alignLeft="@+id/EditText01"
+        android:background="@android:color/darker_gray"
+        android:ems="3"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/reloadEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clipEdit"
+        android:layout_alignBottom="@+id/clipEdit"
+        android:layout_alignRight="@+id/penetrationEdit"
+        android:background="@android:color/darker_gray"
+        android:ems="4" />
+
+    <TextView
+        android:id="@+id/reloadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reloadEdit"
+        android:layout_alignBottom="@+id/reloadEdit"
+        android:layout_toLeftOf="@+id/reloadEdit"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/weapon_reload"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/specialsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clipEdit"
+        android:layout_alignTop="@+id/specialText"
+        android:background="@android:color/darker_gray"
+        android:ems="15"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specialsEdit"
+        android:layout_alignRight="@+id/specialsEdit"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/loadButton" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loadButton"
+        android:layout_toLeftOf="@+id/loadButton"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/saveButton" />
+
+</RelativeLayout>
