@@ -4,294 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TabHost
-        android:id="@android:id/characterTabs"
+    <RelativeLayout
+        android:id="@+id/infoLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
 
-        <RelativeLayout
-            android:id="@+id/infoLayout"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="20dp" >
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="20dp"
+            android:text="@string/characterName"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TextView
-                android:id="@+id/nameText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:padding="20dp"
-                android:text="@string/characterName"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/nameEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/nameText"
-                android:layout_toRightOf="@+id/nameText"
-                android:background="@android:color/darker_gray"
-                android:ems="15" >
-
-                <requestFocus />
-            </EditText>
-
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
-
-                <TabWidget
-                    android:id="@android:id/tabs"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-                </TabWidget>
-
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-
-                    <LinearLayout
-                        android:id="@+id/tab1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/tab2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/tab3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/statsLayout"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal" >
+            android:layout_alignBaseline="@+id/nameText"
+            android:layout_toRightOf="@+id/nameText"
+            android:background="@android:color/darker_gray"
+            android:ems="15" >
 
-            <TextView
-                android:id="@+id/wsText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/ws"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/wsEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/wsText"
-                android:layout_toRightOf="@+id/wsText"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/bsText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/wsText"
-                android:layout_below="@+id/wsText"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/bs"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/bsEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/bsText"
-                android:layout_alignLeft="@+id/wsEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/sText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/bsText"
-                android:layout_below="@+id/bsText"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/s"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/sEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/sText"
-                android:layout_alignLeft="@+id/bsEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/intText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/sEdit"
-                android:layout_toRightOf="@+id/sEdit"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/intl"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/intEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/intText"
-                android:layout_toRightOf="@+id/intText"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/agText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/bsText"
-                android:layout_alignLeft="@+id/intText"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/ag"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/agEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/agText"
-                android:layout_alignLeft="@+id/intEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/tText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/wsText"
-                android:layout_alignLeft="@+id/agText"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/t"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/tEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tText"
-                android:layout_alignLeft="@+id/agEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <EditText
-                android:id="@+id/tEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tText"
-                android:layout_alignLeft="@+id/agEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/perText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/tEdit"
-                android:layout_toRightOf="@+id/tEdit"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/per"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/perEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/perText"
-                android:layout_toRightOf="@+id/perText"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/wpText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/perText"
-                android:layout_below="@+id/perText"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/wp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/wpEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/wpText"
-                android:layout_alignLeft="@+id/perEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-
-            <TextView
-                android:id="@+id/felText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/wpText"
-                android:layout_below="@+id/wpText"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/fel"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <EditText
-                android:id="@+id/felEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/felText"
-                android:layout_alignLeft="@+id/wpEdit"
-                android:background="@android:color/darker_gray"
-                android:ems="2"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-        </RelativeLayout>
-    </TabHost>
-
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    <include layout="@layout/tabhost"/>
 </LinearLayout>

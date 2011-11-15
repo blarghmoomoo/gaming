@@ -27,4 +27,9 @@
 	<string name="intl">Int:</string>
 	<string name="wp">WP:</string>
 	<string name="fel">Fel:</string>
+	<string name="skills">Skills</string>
+	<string name="talents">Talents</string>
+	<string name="weapons">Weapons</string>
+	<string name="armor">Armor</string>
+	<string name="gear">Gear</string>
 </resources>
