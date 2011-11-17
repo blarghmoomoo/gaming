@@ -14,6 +14,7 @@ public class MainMenuFragment extends Fragment {
 
 	protected static final String RANGED_WEAPON_TAG = "rangedWeaponTag";
 	protected static final String CHARACTER_TAG = "characterTag";
+	private DbAdapter dbAdapter;
 
 	public MainMenuFragment(){
 
@@ -23,6 +24,9 @@ public class MainMenuFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		dbAdapter = DbAdapter.Factory.createCharacterDb(this.getActivity(), "warhammer40k", 1);
+		dbAdapter.open();
+		
 		createCharacterButton();
 		createRangedWeaponButton();
 	}
